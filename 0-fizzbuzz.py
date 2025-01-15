@@ -17,10 +17,12 @@ def fizzbuzz(n):
 
     tmp_result = []
     for i in range(1, n + 1):
-        if (i % 3) == 0:
+        if (i % 3) == 0 and (i % 5) == 0: 
+            """vérifiez d'abord si le nombre est un
+          tmp_result.append("FizzBuzz") multiple de 3 et 5 (FizzBuzz),
+          avant de vérifier s'il est un multiple de 3 ou de 5 individuellement."""
+        elif (i % 3) == 0:
             tmp_result.append("Fizz")
-        elif (i % 3) == 0 and (i % 5) == 0:
-            tmp_result.append("FizzBuzz")
         elif (i % 5) == 0:
             tmp_result.append("Buzz")
         else:
